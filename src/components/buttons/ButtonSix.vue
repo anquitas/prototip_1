@@ -1,0 +1,18 @@
+<!-- Outline buttons with state colors -->
+
+<template>
+  <button class="btn btn-outline btn-info">Info</button>
+  <button class="btn btn-outline btn-success">Success</button>
+  <button class="btn btn-outline btn-warning">Warning</button>
+  <button class="btn btn-outline btn-error">Error</button>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
+</style>

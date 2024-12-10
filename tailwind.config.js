@@ -2,14 +2,14 @@
 
 module.exports = {
   content: [
-    './public/index.html',
-    './src/**/*.{vue, html, js}'
+    './public/**/*.html',
+    "./src/**/*.{vue,html,js}"
   ],
   theme: {
     extend: {},
   },
   plugins: [
-    
+    require('daisyui'),
   ],
 }
 

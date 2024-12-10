@@ -1,0 +1,23 @@
+<!-- Navbar with colors -->
+
+<template>
+<div class="navbar bg-neutral text-neutral-content">
+  <button class="btn btn-ghost text-xl">daisyUI</button>
+</div>
+<div class="navbar bg-base-300">
+  <button class="btn btn-ghost text-xl">daisyUI</button>
+</div>
+<div class="navbar bg-primary text-primary-content">
+  <button class="btn btn-ghost text-xl">daisyUI</button>
+</div>
+</template>
+
+<script>
+export default {
+  name: 'NavBarNine'
+}
+</script>
+
+<style>
+
+</style>

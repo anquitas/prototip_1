@@ -1,0 +1,18 @@
+<!-- Button sizes -->
+
+<template>
+  <button class="btn btn-lg">Large</button>
+  <button class="btn">Normal</button>
+  <button class="btn btn-sm">Small</button>
+  <button class="btn btn-xs">Tiny</button>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
+</style>
