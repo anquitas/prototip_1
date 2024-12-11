@@ -1,3 +1,4 @@
+<!-- Avatar group -->
 <template>
   <div class="avatar-group -space-x-6 rtl:space-x-reverse">
   <div class="avatar">

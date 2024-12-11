@@ -1,3 +1,4 @@
+<!-- Avatar with presence indicator -->
 <template>
   <div class="avatar online">
   <div class="w-24 rounded-full">
