@@ -1,19 +1,16 @@
 <template>
   <div class="flex items-center justify-center h-screen bg-blue-100">
-     <GirisYapma/>
-
-</div>
-
+    <BaseFooter/>
+  </div>
 </template>
 
 
 <script>
-import GirisYapma from '../S/GirisYapma.vue';
-
+import BaseFooter from '../N/BaseFooter.vue';
 
 export default {
   components: {
-    GirisYapma
+    BaseFooter
   }
 }
 </script>
