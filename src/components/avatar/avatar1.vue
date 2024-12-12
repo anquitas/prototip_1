@@ -1,3 +1,4 @@
+<!-- Avatar -->
 <template>
   <div class="avatar">
   <div class="w-24 rounded">

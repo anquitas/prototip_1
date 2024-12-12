@@ -1,3 +1,4 @@
+<!-- Accordion with plus/minus icon -->
 <template>
   <div class="collapse collapse-plus bg-base-200">
   <input type="radio" name="my-accordion-3" checked="checked" />

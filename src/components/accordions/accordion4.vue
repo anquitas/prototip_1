@@ -1,3 +1,4 @@
+<!-- Using Accordion and Join together -->
 <template>
   <div class="join join-vertical w-full">
   <div class="collapse collapse-arrow join-item border-base-300 border">

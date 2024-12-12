@@ -1,3 +1,4 @@
+<!-- Avatar with ring -->
 <template>
   <div class="avatar">
   <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
