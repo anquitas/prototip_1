@@ -1,15 +1,19 @@
 <template>
-  <!-- <div class="flex items-center justify-center h-screen bg-gray-100"> -->
-    <UyeOlmaFormu/>
-  <!-- </div> -->
+<NavBar5/>
 </template>
 
 <script>
-import UyeOlmaFormu from '@/components/A/UyeOlmaFormu.vue';
+
+import NavBar5 from '@/components/navbars/NavBar5.vue';
+
+
+
+
+
 
 export default {
   components: {
-    UyeOlmaFormu
+    NavBar5
   }
 }
 </script>
