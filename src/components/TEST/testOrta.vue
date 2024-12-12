@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-center h-screen bg-blue-100">
-    <KullaniciPaneli/>
+     <GirisYapma/>
 
 </div>
 
@@ -8,18 +8,12 @@
 
 
 <script>
-
-// import KullaniciAvatar from '../S/KullaniciAvatar.vue';
-// import KullaniciMenu from '../S/KullaniciMenu.vue';
-import KullaniciPaneli from '../S/KullaniciPaneli.vue';
-
+import GirisYapma from '../S/GirisYapma.vue';
 
 
 export default {
   components: {
-    KullaniciPaneli,
-    // KullaniciAvatar,
-    // KullaniciMenu
+    GirisYapma
   }
 }
 </script>
