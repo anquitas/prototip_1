@@ -1,25 +1,25 @@
 <template>
   <div class="flex items-center justify-center h-screen bg-blue-100">
-    <KullaniciPaneli/>
-
-</div>
+    <BaseFooter/>
+  </div>
 
 </template>
 
 
 <script>
 
-// import KullaniciAvatar from '../S/KullaniciAvatar.vue';
-// import KullaniciMenu from '../S/KullaniciMenu.vue';
-import KullaniciPaneli from '../S/KullaniciPaneli.vue';
+import BaseFooter from '../N/BaseFooter.vue';
+
+
+
+
 
 
 
 export default {
   components: {
-    KullaniciPaneli,
-    // KullaniciAvatar,
-    // KullaniciMenu
+    BaseFooter
+
   }
 }
 </script>
