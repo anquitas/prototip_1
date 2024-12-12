@@ -1,15 +1,13 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <p class="bg-red-500 text-blue-600">bu bir denemedir</p>
-    <div class="flex items-center justify-center h-screen bg-gray-100">
-      <ButtonNine/>
-    </div>
+  <div class="home bg-gray-300">
+
   </div>
 </template>
 
 <script>
-import ButtonNine from '@/components/buttons/ButtonNine.vue';
+// import BaseSearch from '@/components/A/BaseSearch.vue';
+
+// import ButtonNine from '@/components/buttons/ButtonNine.vue';
 
 // @ is an alias to /src
 
@@ -17,7 +15,6 @@ import ButtonNine from '@/components/buttons/ButtonNine.vue';
 export default {
   name: 'HomeView',
   components: {
-    ButtonNine
   }
 }
 </script>

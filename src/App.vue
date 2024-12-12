@@ -1,6 +1,6 @@
 <template>
   <div class="bg-blue-100">
-    <NavBarTwo/>
+    <NavBar/>
     <router-view/>
   </div>
 </template>
@@ -11,19 +11,12 @@
 
 
 
-// import NavBarOne from '@/components/navbars/NavBarOne.vue'
-import NavBarTwo from '@/components/navbars/NavBarTwo.vue'
-// import NavBarThree from '@/components/navbars/NavBarThree.vue'
-// import NavBarFour from './components/navbars/NavBarFour.vue';
-// import NavBarFive from './components/navbars/NavBarFive.vue';
-// import NavBarSix from './components/navbars/NavBarSix.vue';
-// import NavBarSeven from './components/navbars/NavBarSeven.vue';
-// import NavBarEight from './components/navbars/NavBarEight.vue';
-// import NavBarNine from './components/navbars/NavBarNine.vue';
+
+import NavBar from './components/A/NavBar.vue';
 
 export default {
   components: {
-    NavBarTwo
+    NavBar
   }
 }
 </script>
