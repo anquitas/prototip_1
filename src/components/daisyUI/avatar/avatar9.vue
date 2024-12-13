@@ -1,3 +1,4 @@
+<!-- Avatar placeholder -->
 <template>
   <div class="avatar placeholder">
   <div class="bg-neutral text-neutral-content w-24 rounded-full">

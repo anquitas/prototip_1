@@ -1,3 +1,4 @@
+<!-- # Avatar in custom sizes -->
 <template>
   <div class="avatar">
   <div class="w-32 rounded">

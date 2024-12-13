@@ -4,6 +4,7 @@ import TestView from '@/views/TestView.vue'
 import GridView from '@/components/A/gridView.vue'
 import IletisimView from '@/views/IletisimView.vue'
 import HakkimizdaView from '@/views/HakkimizdaView.vue'
+import Test from '@/components/TEST/testOrta.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: 'hakkimizda',
     name: 'hakkimizda',
     component: HakkimizdaView
+  },
+  {
+    path:'/testorta',
+    name:'testOrta',
+    component:Test
   }
 
 ]
