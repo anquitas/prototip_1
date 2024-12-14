@@ -1,5 +1,5 @@
 <template>
-<div class="flex flex-col gap-4 preview items-center  gap-2 overflow-x-hidden bg-cover bg-top p-4 [border-width:var(--tab-border)]">
+<div class="flex flex-col gap-4 preview items-center overflow-x-hidden bg-cover bg-top p-4 [border-width:var(--tab-border)]">
   <label class="input input-bordered flex items-center gap-2">
     <svg
       xmlns="http://www.w3.org/2000/svg"
