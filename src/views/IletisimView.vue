@@ -1,13 +1,35 @@
 <template>
-  <div class="flex flex-col justify-items items-center gap-6">
-    <BaseCollapse v-for="item in veriler" :key="item.id" :veri="item"/>
-     <!-- <BaseCollapse :veri="veris"/> -->
+<div class="grid grid-cols-[1fr_4fr] grid-rows-[auto_auto] gap-4 p-4">
+  <!-- Nav Menu: First Row, First Column -->
+  <div class="p-4">
+    <YanMenu/>
   </div>
+
+  <!-- Content: First Row, Second Column -->
+  <div class="p-4">
+    <BaseCollapse v-for="item in veriler" :key="item.id" :veri="item"/>
+  </div>
+
+  <!-- Explanation: Second Row, Spanning Both Columns -->
+  <div class=" p-4 col-span-2">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+  </div>
+</div>
+  
+    
+    
+     
+  
 </template>
 
 <script>
 import axios from 'axios';
 import BaseCollapse from '@/components/A/BaseCollapse.vue';
+import YanMenu from '@/components/S/YanMenu.vue';
 
 export default {
   data () {
@@ -33,7 +55,8 @@ export default {
     }
   },
   components: {
-    BaseCollapse
+    BaseCollapse,
+    YanMenu
   },
   methods : {
     async deneme () {
