@@ -1,5 +1,5 @@
 <template>
-  
+  <p>hakkimizda sayfasi</p>
 </template>
 
 <script>

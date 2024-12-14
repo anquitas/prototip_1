@@ -28,7 +28,7 @@ const routes = [
     component: IletisimView
   },
   {
-    path: 'hakkimizda',
+    path: '/hakkimizda',
     name: 'hakkimizda',
     component: HakkimizdaView
   },

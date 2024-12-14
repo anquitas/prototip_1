@@ -2,6 +2,7 @@
   <div class="bg-blue-100">
     <NavBar/>
     <router-view/>
+    <BaseFooter/>
   </div>
 </template>
 
@@ -13,10 +14,12 @@
 
 
 import NavBar from './components/A/NavBar.vue';
+import BaseFooter from './components/N/BaseFooter.vue';
 
 export default {
   components: {
-    NavBar
+    NavBar,
+    BaseFooter
   }
 }
 </script>

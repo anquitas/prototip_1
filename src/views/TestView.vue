@@ -1,10 +1,12 @@
 <template>
-<NavBar5/>
+  <BaseCollapse/>
 </template>
 
 <script>
+import BaseCollapse from '@/components/A/BaseCollapse.vue';
 
-import NavBar5 from '@/components/navbars/NavBar5.vue';
+
+
 
 
 
@@ -13,7 +15,7 @@ import NavBar5 from '@/components/navbars/NavBar5.vue';
 
 export default {
   components: {
-    NavBar5
+    BaseCollapse
   }
 }
 </script>

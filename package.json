@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "twc": "npx tailwindcss -i ./src/assets/tailwind.css -o ./src/assets/tailwindOut.css",
-    "tww": "npx tailwindcss -i ./src/assets/tailwind.css -o ./src/assets/tailwindOut.css --watch"
+    "tww": "npx tailwindcss -i ./src/assets/tailwind.css -o ./src/assets/tailwindOut.css --watch",
+    "server": "json-server --watch server/db.json --port 4000 --routes server/routes.json"
   },
   "dependencies": {
     "axios": "^1.7.9",
