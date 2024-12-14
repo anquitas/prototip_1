@@ -6,6 +6,9 @@ import IletisimView from '@/views/IletisimView.vue'
 import HakkimizdaView from '@/views/HakkimizdaView.vue'
 import Test from '@/components/TEST/testOrta.vue'
 import TestSerp from '@/components/TEST/testSerp.vue'
+import KullaniciProfiliView from '@/views/KullaniciProfiliView.vue'
+import KullaniciAyarlariView from '@/views/KullaniciAyarlariView.vue'
+import SecimliSayfaVuex from '@/components/IcerikliSayfaMantik/vuexIle/SecimliSayfaVuex.vue'
 
 const routes = [
   {
@@ -42,6 +45,21 @@ const routes = [
     path:'/testSerp',
     name:'testSerp',
     component:TestSerp
+  },
+  {
+    path: '/kullanici',
+    name: 'kullanici',
+    component: KullaniciProfiliView
+  },
+  {
+    path: '/ayarlar',
+    name: 'ayarlar',
+    component: KullaniciAyarlariView
+  },
+  {
+    path: '/secvuex',
+    name: '/secvuex',
+    component: SecimliSayfaVuex
   }
 
 

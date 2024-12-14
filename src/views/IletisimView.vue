@@ -7,7 +7,9 @@
 
   <!-- Content: First Row, Second Column -->
   <div class="p-4">
-    <BaseCollapse v-for="item in veriler" :key="item.id" :veri="item"/>
+    <div class="flex flex-col gap-4">
+      <BaseCollapse v-for="item in veriler" :key="item.id" :veri="item"/>
+    </div>
   </div>
 
   <!-- Explanation: Second Row, Spanning Both Columns -->
