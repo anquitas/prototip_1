@@ -5,6 +5,7 @@ import GridView from '@/components/A/gridView.vue'
 import IletisimView from '@/views/IletisimView.vue'
 import HakkimizdaView from '@/views/HakkimizdaView.vue'
 import Test from '@/components/TEST/testOrta.vue'
+import TestSerp from '@/components/TEST/testSerp.vue'
 
 const routes = [
   {
@@ -36,7 +37,13 @@ const routes = [
     path:'/testorta',
     name:'testOrta',
     component:Test
+  },
+  {
+    path:'/testSerp',
+    name:'testSerp',
+    component:TestSerp
   }
+
 
 ]
 
