@@ -1,5 +1,5 @@
 // ## CONSTANTS
-const SERVER_URL = 'http://localhost:4000/'
+const SERVER_URL = 'http://localhost:4000'
 
 
 // ## EXPORTS --- --- ---
