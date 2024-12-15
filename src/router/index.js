@@ -9,6 +9,7 @@ import TestSerp from '@/components/TEST/testSerp.vue'
 import KullaniciProfiliView from '@/views/KullaniciProfiliView.vue'
 import KullaniciAyarlariView from '@/views/KullaniciAyarlariView.vue'
 import SecimliSayfaVuex from '@/components/IcerikliSayfaMantik/vuexIle/SecimliSayfaVuex.vue'
+import UyeTest from '@/components/TEST/UyeTest.vue'
 
 const routes = [
   {
@@ -58,8 +59,14 @@ const routes = [
   },
   {
     path: '/secvuex',
-    name: '/secvuex',
+    name: 'secvuex',
     component: SecimliSayfaVuex
+  },
+  {
+    path: '/uyetest',
+    name: 'uyetest',
+    component: UyeTest
+
   }
 
 

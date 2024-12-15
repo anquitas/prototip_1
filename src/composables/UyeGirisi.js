@@ -22,9 +22,12 @@ const CuyeGiris = async (giris_nesne) => {
 }
 
 // ## TESTS --- --- ---
-const first = {email: 'tempus@yahoo.org', parola: 'JLB72EEL6CS'}
-const second = {email: 'sagittis@hotmail.couk', parola: 'ROL21EIH8UM'}
-const test = CuyeGiris(first)
+// const first = {email: 'tempus@yahoo.org', parola: 'JLB72EEL6CS'}
+// const second = {email: 'sagittis@hotmail.couk', parola: 'ROL21EIH8UM'}
+// const test = CuyeGiris(first)
 
 
 // ## EXPORTS --- --- ---
+export {
+  CuyeGiris
+}
