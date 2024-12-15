@@ -8,10 +8,11 @@ const SERVER_URL = 'http://localhost:4000/kullanicilar'
 
 
 // ## METHODS --- --- --- 
-const CkullaniciAl = async () => {
-  const result = await axios.get(SERVER_URL)
+const CkullaniciAl = async (kullaniciID) => {
+  const result = await axios.get(SERVER_URL+ '/' + kullaniciID)
   // console.log(result)
-  console.log(result).data
+  // console.log(result)
+  return result.data
 }
 
 

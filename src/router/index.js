@@ -10,6 +10,8 @@ import KullaniciProfiliView from '@/views/KullaniciProfiliView.vue'
 import KullaniciAyarlariView from '@/views/KullaniciAyarlariView.vue'
 import SecimliSayfaVuex from '@/components/IcerikliSayfaMantik/vuexIle/SecimliSayfaVuex.vue'
 import UyeTest from '@/components/TEST/UyeTest.vue'
+import SayfaBulunamadiView from '@/views/SayfaBulunamadiView.vue'
+import KullaniciBilgiView from '@/views/KullaniciBilgiView.vue'
 
 const routes = [
   {
@@ -67,6 +69,16 @@ const routes = [
     name: 'uyetest',
     component: UyeTest
 
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'SayfaBulunamadiView',
+    component: SayfaBulunamadiView
+  },
+  {
+    path: '/kullanici/:id',
+    name: 'KullaniciBilgiView',
+    component: KullaniciBilgiView
   }
 
 
