@@ -4,7 +4,7 @@
       <YanMenu/>
     </template>
     <template #content>
-      <BaseCollapse v-for="item in veris" :key="item.id" :veri="item"/>
+      <UyeBilgiForm :isim="isim" :soyisim="soyisim" :email="eposta" />
     </template>
     <template #extra>
       <p>dklfnmsdklfnsdklfsnmdklnmsfcdkls</p>
@@ -13,8 +13,9 @@
 </template>
 
 <script>
-import BaseCollapse from '@/components/A/BaseCollapse.vue';
+// import BaseCollapse from '@/components/A/BaseCollapse.vue';
 import SayfaGrid from '@/components/A/SayfaGrid.vue';
+import UyeBilgiForm from '@/components/A/UyeBilgiForm.vue';
 import YanMenu from '@/components/S/YanMenu.vue';
 
 
@@ -27,14 +28,19 @@ export default {
         soru: 'wibbly wobbly timey wimey', 
         cevap: 'Birden fazla üyelik oluşturulmasına; hem şikayetlerin takibini güçleştirmesi ihtimali hem de asılsız-karalama amaçlı şikayet yazımının önüne geçilmesi amacıyla tedbiren izin verilmemektedir.' 
         }
-      ]
+      ],
+      isim: this.$store.getters.UyeBilgi.isim,
+      soyisim: this.$store.getters.UyeBilgi.soyisim,
+      eposta: this.$store.getters.UyeBilgi.eposta
+
     }
   },
   components: {
     SayfaGrid,
     YanMenu,
-    BaseCollapse
-  }
+    UyeBilgiForm
+  },
+
 }
 </script>
 

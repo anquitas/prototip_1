@@ -13,7 +13,7 @@
 <script>
 import AcilirListe from '@/components/Z/AcilirListe.vue';
 
-import YanMenuVuex from '../emitIle/YanMenuVuex.vue';
+import YanMenuVuex from './YanMenuVuex.vue';
 import SayfaGrid from '@/components/A/SayfaGrid.vue';
 
 
