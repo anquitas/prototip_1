@@ -1,4 +1,5 @@
 <template>
+  <template>
 <div class="flex flex-col gap-4 preview items-center overflow-x-hidden bg-cover bg-top p-4 [border-width:var(--tab-border)]">
   <label class="input input-bordered flex items-center gap-2">
     <svg
@@ -35,47 +36,15 @@
     </svg>
     <input type="text" class="grow" placeholder="Email" v-model="email"/>
   </label>
-  <label class="input input-bordered flex items-center gap-2">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 16 16"
-      fill="currentColor"
-      class="h-4 w-4 opacity-70">
-      <path
-        fill-rule="evenodd"
-        d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
-        clip-rule="evenodd" />
-    </svg>
-    <input type="password" class="grow" value="password" placeholder="parola" v-model="parola" />
-  </label>
   <div class="h-2 w-12 bg-green-500 text-center cursor-pointer" @click="uyeOl">üyemi</div>
 </div>
 </template>
+</template>
 
-<script setup>
-import { CUyeOl } from '@/composables/uyeOl';
-import { ref } from 'vue';
-
-
-
-const isim = ref('')
-const soyisim = ref('')
-const email = ref('')
-const parola = ref('')
-
-const uye_nesne = () => {
-  return{
-    isim: isim.value,
-    soyisim: soyisim.value,
-    email: email.value,
-    parola: parola.value
-  }
+<script>
+export default {
+  props: [isim, soyisim, email]
 }
-
-const uyeOl = async () => {
-  CUyeOl(uye_nesne())
-}  
-
 </script>
 
 <style>

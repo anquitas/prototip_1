@@ -12,6 +12,8 @@ import SecimliSayfaVuex from '@/components/IcerikliSayfaMantik/vuexIle/SecimliSa
 import UyeTest from '@/components/TEST/UyeTest.vue'
 import SayfaBulunamadiView from '@/views/SayfaBulunamadiView.vue'
 import KullaniciBilgiView from '@/views/KullaniciBilgiView.vue'
+import KullaniciProfilKart2 from '@/components/A/KullaniciProfilKart2.vue'
+// import KullaniciProfilKart2 from '@/components/A/KullaniciProfilKart2.vue'
 
 const routes = [
   {
@@ -68,7 +70,6 @@ const routes = [
     path: '/uyetest',
     name: 'uyetest',
     component: UyeTest
-
   },
   {
     path: '/:pathMatch(.*)*',
@@ -79,6 +80,11 @@ const routes = [
     path: '/kullanici/:id',
     name: 'KullaniciBilgiView',
     component: KullaniciBilgiView
+  },
+  {
+    path: '/kullanicid/:id',
+    name: 'kullanicibilgid',
+    component: KullaniciProfilKart2
   }
 
 

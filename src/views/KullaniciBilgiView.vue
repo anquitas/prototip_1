@@ -3,6 +3,7 @@
     <h1>kullanici bilgi:</h1>
     <p>ID: {{ kullanici.id }}</p>
     <p>isim: {{ kullanici.isim }}</p>
+    <p>isim: {{ kullanici.soyisim }}</p>
   </div>
 </template>
 

@@ -1,16 +1,18 @@
 <template>
   <div class="flex items-center justify-center h-screen bg-blue-100">
-    <BaseFooter/>
+    <UyeOlmaFormu/>
   </div>
 </template>
 
 
 <script>
-import BaseFooter from '../N/BaseFooter.vue';
+import UyeOlmaFormu from '../A/UyeOlmaFormu.vue';
+
+
 
 export default {
   components: {
-    BaseFooter
+    UyeOlmaFormu
   }
 }
 </script>
