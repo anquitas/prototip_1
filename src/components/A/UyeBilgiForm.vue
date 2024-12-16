@@ -1,5 +1,5 @@
 <template>
-  <template>
+
 <div class="flex flex-col gap-4 preview items-center overflow-x-hidden bg-cover bg-top p-4 [border-width:var(--tab-border)]">
   <label class="input input-bordered flex items-center gap-2">
     <svg
@@ -34,17 +34,28 @@
       <path
         d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
     </svg>
-    <input type="text" class="grow" placeholder="Email" v-model="email"/>
+    <input type="text" class="grow" placeholder="Email" v-model="eposta"/>
   </label>
   <div class="h-2 w-12 bg-green-500 text-center cursor-pointer" @click="uyeOl">üyemi</div>
 </div>
-</template>
+
 </template>
 
-<script>
-export default {
-  props: [isim, soyisim, email]
-}
+<script setup>
+import { ref } from 'vue';
+import { useStore } from 'vuex';
+
+
+const isim = ref('')
+const soyisim = ref('')
+const eposta = ref('')
+
+const store = useStore()
+
+isim.value = store.getters.UyeBilgi.isim
+soyisim.value = store.getters.UyeBilgi.soyisim
+eposta.value = store.getters.UyeBilgi.eposta  
+
 </script>
 
 <style>

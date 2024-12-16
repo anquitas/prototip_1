@@ -2,10 +2,17 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    seciliKategori: null
+    seciliKategori: null,
+    UyeBilgi: {
+      isim:'monica',
+      soyisim:'bing',
+      eposta:'monica@perk.com'
+    }
   },
   getters: {
-    seciliKategori: (state) => state.seciliKategori
+    seciliKategori: (state) => state.seciliKategori,
+    UyeBilgi: (state) => state.UyeBilgi
+    
   },
   mutations: {
     setKategori (state, kategori) {
