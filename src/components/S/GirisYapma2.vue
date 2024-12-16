@@ -1,8 +1,6 @@
 <template>
-  <div class="flex items-center justify-center h-screen bg-blue-100">
     <button class="btn" @click="modelToggle">Üye Girişi</button>
     <YeniModal v-if="goster"/>
-  </div>
 </template>
 
 
