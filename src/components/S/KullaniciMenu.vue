@@ -1,7 +1,9 @@
 <template>
-  <ul
+ <ul
         tabindex="0"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        <KullaniciBilgi/>
+        <hr class="py-2">
         <li>
           <a class="justify-between" href="/kullanici">
             Profilim
@@ -15,8 +17,14 @@
 </template>
 
 <script>
+import KullaniciBilgi from './KullaniciBilgi.vue';
+
 export default {
-    name: 'KullaniciMenu'
+    name: 'KullaniciMenu',
+    components:{
+      KullaniciBilgi
+    }
+    
 }
 </script>
 
