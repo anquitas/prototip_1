@@ -7,19 +7,38 @@ const axios = require('axios')
 const {SERVER_URL} = require('./constants')
 
 // ## CONSTANTS --- --- ---
-SERVER_URL
-console.log(SERVER_URL)
+const POST_URL = SERVER_URL + '/kullanicilar'
+
+
+
+
 // ## METHODS --- --- --- 
-const CuyeGiris = async (giris_nesne) => {
-  const {email, parola} = giris_nesne
+
+const kullanici_bilgi_cikar = (user_object) => {
+  const { email, password } = user_object
+  const auth_info = { email, password }
+  return auth_info
+}
+
+const CuyeGiris = async (giris_nesne) => { // test // GET?
+  const {email, parola} = giris_nesne // deconstruction
   const urli = SERVER_URL + '/kullanicilar'
-  console.log(urli)
   console.log(urli + '?' + 'email=' + email + '&' + 'parola=' + parola)
   const uyeBilgi = await axios.get(urli + '?' + 'email=' + email + '&' + 'parola=' + parola)
   // const uyeBilgi = await axios.get(urli, {params: giris_nesne})
   console.log(uyeBilgi.data)
   return uyeBilgi.data
 }
+
+
+const CUyeGiris = async (giris_nesne) => { // ASİL // POST
+  const auth_info = kullanici_bilgi_cikar(giris_nesne)
+  const result = axios.post(POST_URL, auth_info)
+  return result
+}
+
+
+
 
 // ## TESTS --- --- ---
 // const first = {email: 'tempus@yahoo.org', parola: 'JLB72EEL6CS'}
@@ -29,5 +48,5 @@ const CuyeGiris = async (giris_nesne) => {
 
 // ## EXPORTS --- --- ---
 export {
-  CuyeGiris
+  CuyeGiris, CUyeGiris
 }

@@ -56,8 +56,6 @@
 import { CUyeOl } from '@/composables/uyeOl';
 import { ref } from 'vue';
 
-
-
 const isim = ref('')
 const soyisim = ref('')
 const email = ref('')

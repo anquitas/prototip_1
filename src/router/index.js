@@ -85,6 +85,11 @@ const routes = [
     path: '/kullanicid/:id',
     name: 'kullanicibilgid',
     component: KullaniciProfilKart2
+  },
+  {
+    path: '/testgrid',
+    name: 'testgrid',
+    component: GridView
   }
 
 
