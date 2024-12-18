@@ -1,13 +1,14 @@
 <template>
   <div class="flex items-center justify-center h-screen bg-blue-100">
-    <button class="btn" @click="modelToggle">Üye Girişi</button>
-    <YeniModal v-if="goster"/>
+    <GeriBildirim1/>
   </div>
 </template>
 
 
 <script>
-import YeniModal from '../S/YeniModal.vue';
+import GeriBildirim1 from '../S/GeriBildirim1.vue';
+
+
 
 
 
@@ -17,7 +18,7 @@ import YeniModal from '../S/YeniModal.vue';
 
 export default {
   components: {
-    YeniModal
+    GeriBildirim1
   },
   data() {
     return {goster: false}
