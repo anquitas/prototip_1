@@ -21,7 +21,6 @@ import BaseSearch from './BaseSearch.vue';
 export default {
   components: {
     BaseNavBar,
-    // BaseButton,
     BaseSearch,
     KullaniciPaneli,
     GirisYapma2

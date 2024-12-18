@@ -10,6 +10,7 @@
   <AcilirListe/>
 </template>
 
+
 <script>
 import AcilirListe from '@/components/Z/AcilirListe.vue';
 
