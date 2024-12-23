@@ -13,17 +13,7 @@
 <script>
 export default {
   name: 'FooterList',
-  props: ['title', 'linkler'],
-  data () {
-    return {
-      
-    }
-  }
-
+  props: ['title', 'linkler']
 }
 </script>
-
-<style>
-
-</style>
 

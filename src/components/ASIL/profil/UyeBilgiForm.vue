@@ -19,8 +19,8 @@
 </template>
 
 <script setup>
-import IconMail from '../icons/IconMail.vue';
-import IconUser from '../icons/IconUser.vue';
+import IconMail from '../../icons/IconMail.vue';
+import IconUser from '../../icons/IconUser.vue';
 import { ref } from 'vue';
 import { useStore } from 'vuex';
 

@@ -6,24 +6,15 @@
       <FormContainer><GirisYapmaForm/></FormContainer>
     </div>
     <form method="dialog" class="modal-backdrop">
-    <button>close</button>
+    <button @click="kullaniciStore.girisPanelToggle">close</button>
   </form>
 </dialog>
 </template>
 
-<script>
-import FormContainer from './formContainer.vue';
+<script setup>
+import FormContainer from '../../S/formContainer.vue';
 import GirisYapmaForm from './GirisYapmaForm.vue';
+import { useKullaniciStore } from '@/store/kullaniciStore';
 
-export default {
-  name: 'YeniModal',
-  components: {
-    FormContainer,
-    GirisYapmaForm
-  }
-}
+const kullaniciStore = useKullaniciStore()
 </script>
-
-<style>
-
-</style>

@@ -9,7 +9,7 @@
 
 <script setup>
 import YorumListesi from './YorumListesi.vue';
-import GeriBildirimKomp from './GeriBildirimKomp.vue';
+import GeriBildirimKomp from '../../geriBildirimler/GeriBildirimKomp.vue';
 
 
 </script>

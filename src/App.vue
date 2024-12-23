@@ -1,36 +1,13 @@
 <template>
   <div class="bg-blue-100">
-    <NavBar/>
-    <router-view/>
+    <HeaderPanel class=""/>
+    <router-view class="h-screen"/>
     <BaseFooter/>
   </div>
 </template>
 
 
-<script>
-
-
-
-
-
-import NavBar from './components/A/NavBar.vue';
-import BaseFooter from './components/N/BaseFooter.vue';
-
-export default {
-  components: {
-    NavBar,
-    BaseFooter
-  }
-}
+<script setup>
+import HeaderPanel from './components/ASIL/header/HeaderPanel.vue';
+import BaseFooter from './components/ASIL/footer/BaseFooter.vue';
 </script>
-
-<style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-*/
-</style>

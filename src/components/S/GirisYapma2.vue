@@ -1,38 +1,17 @@
 <template>
-    <button class="btn" @click="modelToggle">Üye Girişi</button>
-    <YeniModal v-if="goster"/>
+    <button class="btn" @click="kullaniciStore.girisPanelToggle">Üye Girişi</button>
+    <YeniModal v-if="kullaniciStore.girisPanelAcik"/>
 </template>
 
 
-<script>
-import YeniModal from '../S/YeniModal.vue';
-
-
-
-
-
-
-
-export default {
-  components: {
-    YeniModal
-  },
-  data() {
-    return {goster: false}
-  },
-  methods: {
-    modelToggle () {this.goster = !this.goster}
-  }
-}
+<script setup>
+import YeniModal from '../ASIL/header/YeniModal.vue';
+import { useKullaniciStore } from '@/store/kullaniciStore';
+// import { ref } from 'vue';
+const kullaniciStore = useKullaniciStore()
+// const goster = ref(false)
+// const modelToggle = () => goster.value = !goster.value
 </script>
 
-<style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-*/
-</style>
+
+

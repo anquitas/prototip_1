@@ -6,6 +6,7 @@ const axios = require('axios')
 // import { SERVER_URL } from "./constants";
 const {SERVER_URL} = require('./constants')
 
+
 // ## CONSTANTS --- --- ---
 const POST_URL = SERVER_URL + '/kullanicilar'
 

@@ -1,13 +1,15 @@
 <template>
   <div class="flex items-center justify-center h-screen bg-blue-100">
-   <YanMenu/>
-    
+    deneme
+    <TemaKontrol/>
   </div>
 </template>
 
 
 <script>
-import YanMenu from '../S/YanMenu.vue';
+import TemaKontrol from '../A/TemaKontrol.vue';
+
+
 
 
 // import GirisYapma from '../S/GirisYapma.vue';
@@ -16,7 +18,7 @@ import YanMenu from '../S/YanMenu.vue';
 
 export default {
   components: {
-    YanMenu
+    TemaKontrol
   }
 }
 </script>

@@ -1,18 +1,24 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '../views/siteView/HomeView.vue'
 import TestView from '@/views/TestView.vue'
 import GridView from '@/components/A/gridView.vue'
-import IletisimView from '@/views/IletisimView.vue'
-import HakkimizdaView from '@/views/HakkimizdaView.vue'
+import IletisimView from '@/views/siteView/IletisimView.vue'
+import HakkimizdaView from '@/views/siteView/HakkimizdaView.vue'
 import Test from '@/components/TEST/testOrta.vue'
 import TestSerp from '@/components/TEST/testSerp.vue'
-import KullaniciProfiliView from '@/views/KullaniciProfiliView.vue'
-import KullaniciAyarlariView from '@/views/KullaniciAyarlariView.vue'
+import KullaniciProfiliView from '@/views/profilView/KullaniciProfiliView.vue'
+import KullaniciAyarlariView from '@/views/ayarlarView/KullaniciAyarlariView.vue'
 import SecimliSayfaVuex from '@/components/IcerikliSayfaMantik/vuexIle/SecimliSayfaVuex.vue'
 import UyeTest from '@/components/TEST/UyeTest.vue'
-import SayfaBulunamadiView from '@/views/SayfaBulunamadiView.vue'
-import KullaniciBilgiView from '@/views/KullaniciBilgiView.vue'
+import SayfaBulunamadiView from '@/views/siteView/SayfaBulunamadiView.vue'
+import KullaniciBilgiView from '@/views/profilView/KullaniciBilgiView.vue'
 import KullaniciProfilKart2 from '@/components/A/KullaniciProfilKart2.vue'
+import SifreDegistirme from '@/components/sifreDegistirme/SifreDegistirme.vue'
+import TestOguz from '@/components/TEST/TestOguz.vue'
+import ProfilAyarGenel from '@/views/profilView/profilAyarGenel.vue'
+import ProfilAyarlarIletisim from '@/views/profilView/profilAyarlarIletisim.vue'
+import GeriBildirim2 from '@/components/ASIL/geriBildirim/GeriBildirim2.vue'
+import GeriBildirim1 from '@/components/S/GeriBildirim1.vue'
 // import KullaniciProfilKart2 from '@/components/A/KullaniciProfilKart2.vue'
 
 const routes = [
@@ -51,15 +57,41 @@ const routes = [
     name:'testSerp',
     component:TestSerp
   },
-  {
+  { // MULTI
     path: '/kullanici',
     name: 'kullanici',
-    component: KullaniciProfiliView
+    component: KullaniciProfiliView,
+    children: [
+      {
+        path: '',
+        redirect: 'kullanici/genel', // Redirect to child1 by default
+      },
+      {
+        path: 'genel',
+        name: 'profilAyarGenel',
+        component: ProfilAyarGenel
+      },
+      {
+        path: 'iletisim',
+        name: 'profilAyarIletisim',
+        component: ProfilAyarlarIletisim
+      }
+    ]
   },
-  {
+  { // MULTI
     path: '/ayarlar',
     name: 'ayarlar',
-    component: KullaniciAyarlariView
+    component: KullaniciAyarlariView,
+    children: [
+      {
+        path: '',
+        redirect: 'ayarlar/guvenlik'
+      },
+      {
+        path: 'guvenlik',
+        component: SifreDegistirme
+      }
+    ]
   },
   {
     path: '/secvuex',
@@ -90,6 +122,21 @@ const routes = [
     path: '/testgrid',
     name: 'testgrid',
     component: GridView
+  },
+  {
+    name: 'testoguz',
+    path: '/testoguz',
+    component: TestOguz
+  },
+  {
+    path: '/testgb2',
+    name: 'testgb2',
+    component: GeriBildirim2
+  },
+  {
+    path: '/testgb',
+    name: 'testgb',
+    component: GeriBildirim1
   }
 
 

@@ -1,13 +1,13 @@
 <template>
   <SayfaGrid>
     <template #navMenu>
-      <YanMenu/>
+      <div class="container flex flex-col gap-2">
+        <router-link :to="{name: 'profilAyarGenel'}">genel</router-link>
+        <router-link to="iletisim">iletisim</router-link>
+      </div>
     </template>
     <template #content>
-      <UyeBilgiForm :isim="isim" :soyisim="soyisim" :email="eposta" />
-    </template>
-    <template #extra>
-      <p>dklfnmsdklfnsdklfsnmdklnmsfcdkls</p>
+      <router-view/>
     </template>
   </SayfaGrid>
 </template>
@@ -15,8 +15,7 @@
 <script>
 // import BaseCollapse from '@/components/A/BaseCollapse.vue';
 import SayfaGrid from '@/components/A/SayfaGrid.vue';
-import UyeBilgiForm from '@/components/A/UyeBilgiForm.vue';
-import YanMenu from '@/components/S/YanMenu.vue';
+// import YanMenu from '@/components/S/YanMenu.vue';
 
 
 export default {
@@ -37,8 +36,7 @@ export default {
   },
   components: {
     SayfaGrid,
-    YanMenu,
-    UyeBilgiForm
+    // YanMenu,
   },
 
 }

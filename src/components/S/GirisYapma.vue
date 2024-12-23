@@ -15,7 +15,7 @@
 
 <script>
 import FormContainer from './formContainer.vue';
-import GirisYapmaForm from './GirisYapmaForm.vue';
+import GirisYapmaForm from '../ASIL/header/GirisYapmaForm.vue';
 export default {
 components:{
   GirisYapmaForm,
